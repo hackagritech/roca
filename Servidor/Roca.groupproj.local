@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/03/14 07:55:57.000.726,C:\Projetos\Roça!\Roça!.groupproj=C:\Users\Willian Hubner\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2020/03/14 13:22:30.000.701,C:\Projetos\Roca\Roça!.groupproj=C:\Projetos\Roca\Roca.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\Willian Hubner\Desktop\Roca\ServerAPI\ServerRoca.dproj"/>
+	</Default.Personality>
+</BorlandProject>

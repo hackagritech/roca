@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5B6A251D-D2F6-43C8-9A69-D2BF5A42C574}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ServerAPI\ServerRoca.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ServerAuth\ServerAuth.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ServerRoca">
+        <MSBuild Projects="ServerAPI\ServerRoca.dproj"/>
+    </Target>
+    <Target Name="ServerRoca:Clean">
+        <MSBuild Projects="ServerAPI\ServerRoca.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServerRoca:Make">
+        <MSBuild Projects="ServerAPI\ServerRoca.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServerAuth">
+        <MSBuild Projects="ServerAuth\ServerAuth.dproj"/>
+    </Target>
+    <Target Name="ServerAuth:Clean">
+        <MSBuild Projects="ServerAuth\ServerAuth.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServerAuth:Make">
+        <MSBuild Projects="ServerAuth\ServerAuth.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ServerRoca;ServerAuth"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ServerRoca:Clean;ServerAuth:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ServerRoca:Make;ServerAuth:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
