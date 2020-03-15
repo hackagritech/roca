@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div class="map-content">
+    <div class="header">
+      <ion-text>TALHÃO: {{ operacaoSelecionada.TALHAO }}</ion-text><br/>
+      <ion-text>ATIVIDADE: {{ operacaoSelecionada.ATIVIDADE }}</ion-text><br/>
+      <ion-text>OPERAÇÃO: {{ operacaoSelecionada.OPERACAO }}</ion-text>
+      <ion-item *ngFor="let produto of operacaoSelecionada['PRODUTOS']">
+        <ion-text class="produtos-header">PRODUTOS: </ion-text><br/>
+        <ion-text>{{ produto.DESCRICAO }}</ion-text>
+      </ion-item>
+    </div>
+    <div class="hr"></div>
+    <div class="status">
+      <ion-text style="text-align: center; font-size: 24px; font-weight: bold">TEMPO:<br> {{tempoFinal}}</ion-text><br>
+      <ion-text style="text-align: center; font-size: 24px; font-weight: bold">VELOCIDADE:<br> {{velocidade}} KM/H</ion-text>
+      <div *ngIf="pararProcesso == true">
+        <ion-text class="text-details">Distância: {{distancia}}</ion-text><br>
+        <ion-text class="text-details">Velocidade Média: {{velocidadeMedia}}</ion-text><br>
+        <ion-text class="text-details">Hora de Início: {{horaInicio}}</ion-text><br>
+        <div *ngIf="processoFinalizado == true">
+          <ion-text class="text-details">Hora Final: {{horaFinal}}</ion-text><br>
+          <ion-text class="text-details">Tempo de Execução: {{tempoDeExecucao}}</ion-text><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-map">
+    <ion-button *ngIf="comecarProcesso == true" class="button-footer" (click)="comecarOperacao()">COMEÇAR</ion-button>
+    <ion-button *ngIf="pararProcesso == true && processoFinalizado == false" class="button-footer-red" (click)="pararOperacao()">FINALIZAR</ion-button>
+  </div>
+</ion-content>

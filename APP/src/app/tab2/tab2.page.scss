@@ -1,0 +1,58 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.map-content {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.footer-map {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+}
+
+.button-footer {
+  margin: 0 auto;
+  --background: green;
+  width: 80px;
+}
+
+.button-footer-red {
+  margin: 0 auto;
+  --background: green;
+  width: 80px;
+}
+app-tab2 {
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.produtos-header {
+  font-weight: bold;
+  display: flex;
+}
+
+.hr {
+  margin-top: 10px;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+.status {
+  margin-top: 80px;
+  margin-left: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-details {
+  margin-bottom: 60px;
+}
