@@ -43,6 +43,7 @@ Quatro Aplicações foram desenvolvidas, sendo elas: Servidor de Autenticação,
 - Lista das Operações executadas por operador
 - Registro do Tempo, Distância e Velocidade Média
 
+# Esquemático 
 ![](https://github.com/hackagritech/roca/blob/master/esquematico_dados.png);
 
 # Métodos Servidor
