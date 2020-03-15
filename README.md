@@ -59,7 +59,7 @@ Quatro Aplicações foram desenvolvidas, sendo elas: Servidor de Autenticação,
 - *POST* tarefa
 - *POST* importado
 - *POST* resumo_talhao
-= *POST* detalhar_talhao
+- *POST* detalhar_talhao
 
 - *PUT* tarefa
 
