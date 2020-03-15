@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ATIVIDADES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main-content">
+    <ion-text class="title" style="padding-left: 35px; margin-top: 20px;">SELECIONE AS OPERAÇÕES</ion-text>
+  <ion-list class="list-content">
+    <ion-item *ngFor="let item of Processos; let i= index" class="div-item" (click)="selecionaTarefa(item, i)">
+      <div class="item-padding">
+        <ion-text class="label">{{ item.OPERACAO }}</ion-text>
+        <ion-text class="mini-label">{{ item.ATIVIDADE }}</ion-text>
+        <ion-text class="talhao-label">Talhão: {{ item.TALHAO }} - {{ item.AREA }}m²</ion-text>
+      </div>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="next()">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-button>
+</ion-content>

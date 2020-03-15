@@ -1,0 +1,41 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.list-content {
+  padding-top: 30px;
+}
+
+.label {
+  display: flex;
+  font-weight: bold;
+}
+
+.mini-label {
+  font-size: 16px;
+  color: #666;
+  display: flex;
+}
+
+.div-item {
+  width: 100%;
+  display: list-item;
+}
+
+.item-padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.talhao-label {
+  font-weight: bold;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
