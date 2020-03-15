@@ -43,7 +43,7 @@ Quatro Aplicações foram desenvolvidas, sendo elas: Servidor de Autenticação,
 - Lista das Operações executadas por operador
 - Registro do Tempo, Distância e Velocidade Média
 
-![esquematico.png]
+![](esquematico.png);
 
 # Métodos Servidor
 #### Servidor Aplicação
