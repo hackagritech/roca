@@ -1,0 +1,28 @@
+<!-- <ion-content [fullscreen]="true">
+  <div class="main-content">
+    <ion-label class="label">OPERAÇÃO:</ion-label><br/>
+    <ion-text>{{item.OPERACAO}}</ion-text><br/>
+    <div class="hr-class"></div>
+    <ion-label class="label">ATIVIDADE:</ion-label><br/>
+    <ion-text>{{item.ATIVIDADE}}</ion-text><br/>
+    <div class="hr-class"></div>
+    <ion-label class="label">TALHÃO:</ion-label><br/>
+    <ion-text>{{item.TALHAO}} - {{item.AREA}}m²</ion-text><br/>
+    <div class="hr-class"></div>
+    <div class="footer-map">
+      <ion-button class="button-footer">INICIAR ATIVIDADE</ion-button>
+    </div>
+  </div>
+</ion-content> -->
+<ion-content class="main-content">
+    <ion-list class="list-content">
+      <ion-text class="title" style="padding-left: 35px; margin-top: 20px;">SELECIONE UMA OPERAÇÃO</ion-text>
+      <ion-item *ngFor="let item of OperacoesSelecionadas; let i= index" class="div-item" (click)="selecionaTarefa(item, i)">
+        <div class="item-padding">
+          <ion-text class="label">{{ item.OPERACAO }}</ion-text>
+          <ion-text class="mini-label">{{ item.ATIVIDADE }}</ion-text>
+          <ion-text class="talhao-label">Talhão: {{ item.TALHAO }} - {{ item.AREA }}m²</ion-text>
+        </div>
+      </ion-item>
+    </ion-list>
+</ion-content>

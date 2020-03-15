@@ -1,0 +1,71 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.main-content {
+  padding: 80px 10px 0px 10px !important;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.hr-class {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.footer-map {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+}
+
+.button-footer {
+  margin: 0 auto;
+  --background: green;
+}
+
+
+.list-content {
+  padding-top: 30px;
+}
+
+.label {
+  display: flex;
+  font-weight: bold;
+}
+
+.mini-label {
+  font-size: 16px;
+  color: #666;
+  display: flex;
+}
+
+.div-item {
+  width: 100%;
+  display: list-item;
+}
+
+.item-padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.talhao-label {
+  font-weight: bold;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
