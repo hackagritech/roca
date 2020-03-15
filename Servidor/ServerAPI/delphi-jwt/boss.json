@@ -1,0 +1,10 @@
+{
+	"name": "delphi-jwt",
+	"description": "",
+	"version": "1.0.0",
+	"private": false,
+	"homepage": "",
+	"mainsrc": "Source/",
+	"supported": "xe+",
+	"dprojFile": ""
+}
