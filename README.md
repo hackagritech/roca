@@ -73,4 +73,3 @@ Quatro Aplicações foram desenvolvidas, sendo elas: Servidor de Autenticação,
 - [Luan Hübner](https://github.com/luanhubner).
 - [Fernanda Brevilieri](https://www.linkedin.com/in/fernanda-araujo-brevilieri-18421a79/)
 - [Lucas Sá](https://www.linkedin.com/in/lucas-s%C3%A1-584b0a1a2/)
-https://github.com/luanhubner
